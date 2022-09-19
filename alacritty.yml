@@ -30,7 +30,7 @@ window:
   # must be at least `2`, while using a value of `0` for columns and lines will
   # fall back to the window manager's recommended size.
   dimensions:
-   columns: 120
+   columns: 125
    lines: 30
 
   # Window position (changes require restart)
@@ -433,10 +433,10 @@ font:
 #   - (macOS) /bin/bash --login
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
-#shell:
-#  program: /bin/bash
-#  args:
-#    - --login
+shell:
+ program: C:\Program Files\Git\bin\sh.exe
+ args:
+   - --login
 
 # Startup directory
 #
