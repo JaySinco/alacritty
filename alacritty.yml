@@ -14,7 +14,7 @@
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
-#env:
+env:
   # TERM variable
   #
   # This value is used to set the `$TERM` environment variable for
@@ -22,6 +22,9 @@
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
   #TERM: alacritty
+  CHERE_INVOKING: "1"
+  MSYSTEM: "MINGW64"
+  MSYS2_PATH_TYPE: "inherit"
 
 window:
   # Window dimensions (changes require restart)
@@ -434,7 +437,7 @@ selection:
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
 shell:
- program: C:\Program Files\Git\bin\sh.exe
+ program: C:\msys64\usr\bin\bash.exe
  args:
    - --login
 
